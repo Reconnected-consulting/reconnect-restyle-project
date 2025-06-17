@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -25,7 +24,7 @@ const Index = () => {
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
            
               <Link to="/contact">
-                <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+                <Button className="bg-blue-600 hover:bg-blue-700">Connect</Button>
               </Link>
             </div>
           </div>
@@ -50,9 +49,6 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 rounded-full border-2 hover:bg-gray-50">
-                Learn More
-              </Button>
             </div>
           </div>
         </div>
@@ -231,9 +227,6 @@ const Index = () => {
                 Schedule a Consultation
               </Button>
             </Link>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4 rounded-full">
-              View Our Work
-            </Button>
           </div>
         </div>
       </section>
