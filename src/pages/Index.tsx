@@ -1,5 +1,5 @@
 
-import { ArrowRight, Users, Globe, Shield, Zap } from "lucide-react";
+import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -10,12 +10,17 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <Globe className="h-8 w-8 text-blue-600" />
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
+                alt="Reconnected Logo" 
+                className="h-10 w-10"
+              />
               <span className="text-2xl font-bold text-gray-900">Reconnected</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+              <a href="#specialties" className="text-gray-700 hover:text-blue-600 transition-colors">Specialties</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
               <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
@@ -33,7 +38,7 @@ const Index = () => {
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Digital World</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-              We bridge the gap between technology and human connection, creating seamless digital experiences that bring people together.
+              We bridge the gap between technology and human connection, creating seamless digital experiences that bring people together through cutting-edge drone technology and 3D innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
@@ -104,8 +109,74 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Drone & 3D Services Section */}
+      <section id="specialties" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Specialized Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Cutting-edge drone technology and 3D solutions that push the boundaries of what's possible
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Drone Services */}
+            <div className="space-y-8">
+              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                      <Camera className="h-6 w-6 text-orange-600" />
+                    </div>
+                    <CardTitle className="text-2xl font-bold text-gray-900">Drone Services</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
+                    Professional aerial photography, videography, and surveying services using state-of-the-art drone technology for stunning perspectives and precise data collection.
+                  </CardDescription>
+                  <div className="aspect-video rounded-lg overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=600&h=400&fit=crop" 
+                      alt="Professional drone in flight" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* 3D Services */}
+            <div className="space-y-8">
+              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
+                      <Box className="h-6 w-6 text-cyan-600" />
+                    </div>
+                    <CardTitle className="text-2xl font-bold text-gray-900">3D Solutions</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
+                    Advanced 3D modeling, rendering, and visualization services that bring your ideas to life with photorealistic quality and immersive experiences.
+                  </CardDescription>
+                  <div className="aspect-video rounded-lg overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" 
+                      alt="3D technology and modeling workspace" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -113,7 +184,7 @@ const Index = () => {
                 Reconnecting Business with Innovation
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                At Reconnected, we believe that technology should bring people closer together, not drive them apart. Our team of experts specializes in creating digital solutions that foster genuine connections.
+                At Reconnected, we believe that technology should bring people closer together, not drive them apart. Our team of experts specializes in creating digital solutions that foster genuine connections through innovative drone technology and immersive 3D experiences.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -122,7 +193,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Innovation First</h3>
-                    <p className="text-gray-600">We stay ahead of technology trends to deliver cutting-edge solutions.</p>
+                    <p className="text-gray-600">We stay ahead of technology trends to deliver cutting-edge solutions including drone and 3D technologies.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -131,7 +202,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Human-Centered Design</h3>
-                    <p className="text-gray-600">Every solution is designed with the end user in mind.</p>
+                    <p className="text-gray-600">Every solution is designed with the end user in mind, creating meaningful connections through technology.</p>
                   </div>
                 </div>
               </div>
@@ -148,7 +219,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Reconnect?</h2>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Let's discuss how we can help transform your digital presence and create meaningful connections with your audience.
+            Let's discuss how we can help transform your digital presence and create meaningful connections with your audience through our comprehensive services including drone and 3D solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 text-lg px-8 py-4 rounded-full">
@@ -164,12 +235,16 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-8">
-            <Globe className="h-8 w-8 text-blue-400" />
+          <div className="flex items-center justify-center space-x-3 mb-8">
+            <img 
+              src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
+              alt="Reconnected Logo" 
+              className="h-8 w-8"
+            />
             <span className="text-2xl font-bold">Reconnected</span>
           </div>
           <p className="text-gray-400 mb-8">
-            Bridging the gap between technology and human connection.
+            Bridging the gap between technology and human connection through innovation.
           </p>
           <div className="border-t border-gray-700 pt-8">
             <p className="text-gray-500">
