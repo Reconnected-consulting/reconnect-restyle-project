@@ -1,3 +1,4 @@
+
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -182,7 +183,7 @@ const Index = () => {
           <img 
             src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
             alt="Reconnected Logo Watermark" 
-            className="w-96 h-96 object-contain"
+            className="w-[1152px] h-[1152px] object-contain"
           />
         </div>
         
