@@ -176,8 +176,17 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 relative overflow-hidden">
+        {/* Logo Watermark */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+          <img 
+            src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
+            alt="Reconnected Logo Watermark" 
+            className="w-96 h-96 object-contain"
+          />
+        </div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
