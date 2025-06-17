@@ -2,6 +2,7 @@
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -14,7 +15,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
                 alt="Reconnected Logo" 
-                className="h-10 w-10"
+                className="h-10 w-auto object-contain"
               />
               <span className="text-2xl font-bold text-gray-900">Reconnected</span>
             </div>
@@ -22,8 +23,10 @@ const Index = () => {
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <a href="#specialties" className="text-gray-700 hover:text-blue-600 transition-colors">Specialties</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+              <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</Link>
+              <Link to="/contact">
+                <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -41,10 +44,12 @@ const Index = () => {
               We bridge the gap between technology and human connection, creating seamless digital experiences that bring people together through cutting-edge drone technology and 3D innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
-                Start Your Journey
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
+                  Start Your Journey
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 rounded-full border-2 hover:bg-gray-50">
                 Learn More
               </Button>
@@ -175,7 +180,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -214,17 +218,19 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+      {/* Contact CTA Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Reconnect?</h2>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
             Let's discuss how we can help transform your digital presence and create meaningful connections with your audience through our comprehensive services including drone and 3D solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 text-lg px-8 py-4 rounded-full">
-              Schedule a Consultation
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 text-lg px-8 py-4 rounded-full">
+                Schedule a Consultation
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4 rounded-full">
               View Our Work
             </Button>
@@ -239,7 +245,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
               alt="Reconnected Logo" 
-              className="h-8 w-8"
+              className="h-8 w-auto object-contain"
             />
             <span className="text-2xl font-bold">Reconnected</span>
           </div>
