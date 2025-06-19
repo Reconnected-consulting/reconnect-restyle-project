@@ -46,7 +46,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
                 alt="Reconnected Logo" 
-                className="h-[100px] w-auto object-contain"
+                className="h-[200px] w-auto object-contain"
               />
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link to="/contact">
