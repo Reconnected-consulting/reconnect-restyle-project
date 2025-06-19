@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 
 const GoogleMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
-  const [apiKey, setApiKey] = useState(localStorage.getItem('googleMapsApiKey') || '');
-  const [showApiKeyInput, setShowApiKeyInput] = useState(!apiKey);
+  const [apiKey, setApiKey] = useState('AIzaSyDIqjmnHWswdGmn49osAxeYUHUvx_1loNE');
+  const [showApiKeyInput, setShowApiKeyInput] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const initializeMap = async (key: string) => {
@@ -58,7 +58,7 @@ const GoogleMap = () => {
   };
 
   useEffect(() => {
-    if (apiKey && !showApiKeyInput) {
+    if (apiKey) {
       initializeMap(apiKey);
     }
   }, []);
