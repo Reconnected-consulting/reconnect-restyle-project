@@ -1,14 +1,10 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Button } from '@/components/ui/button';
 
 const GoogleMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
-  const [apiKey, setApiKey] = useState('AIzaSyDIqjmnHWswdGmn49osAxeYUHUvx_1loNE');
-  const [showApiKeyInput, setShowApiKeyInput] = useState(false);
+  const [apiKey] = useState('AIzaSyDIqjmnHWswdGmn49osAxeYUHUvx_1loNE');
   const [isLoading, setIsLoading] = useState(false);
 
   const initializeMap = async (key: string) => {
@@ -31,6 +27,7 @@ const GoogleMap = () => {
       const map = new Map(mapRef.current, {
         zoom: 15,
         center: waimateLocation,
+        mapTypeId: 'terrain',
         mapId: 'DEMO_MAP_ID'
       });
 
@@ -49,52 +46,11 @@ const GoogleMap = () => {
     }
   };
 
-  const handleApiKeySubmit = () => {
-    if (apiKey.trim()) {
-      localStorage.setItem('googleMapsApiKey', apiKey);
-      setShowApiKeyInput(false);
-      initializeMap(apiKey);
-    }
-  };
-
   useEffect(() => {
     if (apiKey) {
       initializeMap(apiKey);
     }
   }, []);
-
-  if (showApiKeyInput) {
-    return (
-      <div className="space-y-4 p-6 bg-blue-50 rounded-lg border-2 border-dashed border-blue-200">
-        <div className="text-center">
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">Google Maps Integration</h3>
-          <p className="text-sm text-gray-600 mb-4">
-            To display the interactive map, please enter your Google Maps API key
-          </p>
-        </div>
-        
-        <div className="space-y-2">
-          <Label htmlFor="apiKey">Google Maps API Key</Label>
-          <Input
-            id="apiKey"
-            type="password"
-            value={apiKey}
-            onChange={(e) => setApiKey(e.target.value)}
-            placeholder="Enter your Google Maps API key"
-          />
-        </div>
-        
-        <Button onClick={handleApiKeySubmit} className="w-full">
-          Load Map
-        </Button>
-        
-        <div className="text-xs text-gray-500 mt-4">
-          <p>Get your API key at: <a href="https://console.cloud.google.com/google/maps-apis" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Google Cloud Console</a></p>
-          <p className="mt-1">Make sure to enable the Maps JavaScript API and Places API</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="relative">
@@ -112,15 +68,6 @@ const GoogleMap = () => {
         className="w-full h-64 rounded-lg shadow-lg"
         style={{ minHeight: '300px' }}
       />
-      
-      <Button
-        variant="outline"
-        size="sm"
-        className="absolute top-2 right-2 bg-white"
-        onClick={() => setShowApiKeyInput(true)}
-      >
-        Change API Key
-      </Button>
     </div>
   );
 };
