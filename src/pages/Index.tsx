@@ -32,8 +32,15 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative">
+        {/* Background New Zealand map - now covers entire hero section */}
+        <img 
+          src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
+          alt="New Zealand Map Background" 
+          className="absolute inset-0 w-[450px] h-[450px] object-contain opacity-20 z-0"
+          style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
               Reconnect Your
@@ -44,13 +51,6 @@ const Index = () => {
             </p>
             <div className="flex flex-col items-center space-y-4">
               <div className="relative">
-                {/* Background New Zealand map */}
-                <img 
-                  src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
-                  alt="New Zealand Map Background" 
-                  className="absolute inset-0 w-[300px] h-[300px] object-contain opacity-20 z-0"
-                  style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
-                />
                 {/* Central logo */}
                 <img 
                   src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
