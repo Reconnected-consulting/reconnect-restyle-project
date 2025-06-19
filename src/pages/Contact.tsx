@@ -59,6 +59,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">Location</h3>
+                      <p className="text-gray-600">35 Queen Street</p>
                       <p className="text-gray-600">Waimate, Canterbury, New Zealand</p>
                     </div>
                   </div>
@@ -69,7 +70,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600">+64 3 689 XXXX</p>
+                      <p className="text-gray-600">+64 022 3200988</p>
                     </div>
                   </div>
                   
@@ -79,7 +80,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">hello@reconnected.website</p>
+                      <p className="text-gray-600">reconnectedit@gmail.com</p>
                     </div>
                   </div>
                   
@@ -96,17 +97,22 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              {/* Map Placeholder */}
+              {/* Enhanced Map Section */}
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold text-gray-900">Find Us in Waimate</CardTitle>
+                  <CardTitle className="text-xl font-bold text-gray-900">Visit Us in Waimate</CardTitle>
+                  <CardDescription>
+                    Located in the heart of Canterbury's beautiful South Island
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <MapPin className="h-12 w-12 mx-auto mb-4" />
-                      <p className="text-lg font-semibold">Interactive Map Coming Soon</p>
-                      <p>Waimate, Canterbury, New Zealand</p>
+                  <div className="aspect-video bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-200">
+                    <div className="text-center text-gray-600 p-8">
+                      <MapPin className="h-16 w-16 mx-auto mb-4 text-blue-500" />
+                      <h3 className="text-xl font-semibold mb-2 text-gray-800">35 Queen Street</h3>
+                      <p className="text-lg mb-1">Waimate, Canterbury</p>
+                      <p className="text-lg mb-4">New Zealand</p>
+                      <p className="text-sm text-gray-500">Interactive map integration available</p>
                     </div>
                   </div>
                 </CardContent>
