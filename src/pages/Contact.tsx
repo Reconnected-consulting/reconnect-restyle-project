@@ -1,10 +1,10 @@
-
 import { MapPin, Phone, Mail, Clock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link } from "react-router-dom";
+import GoogleMap from "@/components/GoogleMap";
 
 const Contact = () => {
   return (
@@ -97,7 +97,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              {/* Enhanced Map Section */}
+              {/* Interactive Google Map */}
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold text-gray-900">Visit Us in Waimate</CardTitle>
@@ -106,15 +106,7 @@ const Contact = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-200">
-                    <div className="text-center text-gray-600 p-8">
-                      <MapPin className="h-16 w-16 mx-auto mb-4 text-blue-500" />
-                      <h3 className="text-xl font-semibold mb-2 text-gray-800">35 Queen Street</h3>
-                      <p className="text-lg mb-1">Waimate, Canterbury</p>
-                      <p className="text-lg mb-4">New Zealand</p>
-                      <p className="text-sm text-gray-500">Interactive map integration available</p>
-                    </div>
-                  </div>
+                  <GoogleMap />
                 </CardContent>
               </Card>
             </div>
