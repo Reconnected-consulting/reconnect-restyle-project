@@ -1,4 +1,5 @@
 
+
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -165,8 +166,8 @@ const Index = () => {
                   </CardDescription>
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" 
-                      alt="3D technology and modeling workspace" 
+                      src="/lovable-uploads/e0efa479-b242-45ad-a3f1-c1fa4cf12db9.png" 
+                      alt="3D wireframe modeling example" 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -267,3 +268,4 @@ const Index = () => {
 };
 
 export default Index;
+
