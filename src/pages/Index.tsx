@@ -1,5 +1,3 @@
-
-
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,13 +42,20 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
               We bridge the gap between technology and human connection, save time and connect worldwide
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/contact">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
-                  Start Your Journey
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+            <div className="flex flex-col items-center space-y-6">
+              <img 
+                src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
+                alt="Reconnected Logo" 
+                className="h-[100px] w-auto object-contain"
+              />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
+                    Start Your Journey
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -268,4 +273,3 @@ const Index = () => {
 };
 
 export default Index;
-
