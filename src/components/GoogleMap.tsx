@@ -25,9 +25,9 @@ const GoogleMap = () => {
       const waimateLocation = { lat: -44.7331, lng: 171.0462 };
 
       const map = new Map(mapRef.current, {
-        zoom: 15,
+        zoom: 8,
         center: waimateLocation,
-        mapTypeId: 'terrain',
+        mapTypeId: 'satellite',
         mapId: 'DEMO_MAP_ID'
       });
 
