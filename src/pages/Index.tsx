@@ -38,7 +38,7 @@ const Index = () => {
           src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
           alt="New Zealand Map Background" 
           className="absolute inset-0 w-[450px] h-[450px] object-contain opacity-20 z-0"
-          style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
+          style={{ transform: 'translate(-50%, calc(-50% + 100px))', left: '50%', top: '50%' }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fade-in">
