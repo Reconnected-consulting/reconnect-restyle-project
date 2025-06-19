@@ -42,11 +42,11 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
               We bridge the gap between technology and human connection, save time and connect worldwide
             </p>
-            <div className="flex flex-col items-center space-y-6">
+            <div className="flex flex-col items-center space-y-4">
               <img 
                 src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
                 alt="Reconnected Logo" 
-                className="h-[200px] w-auto object-contain"
+                className="h-[100px] w-auto object-contain"
               />
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link to="/contact">
