@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,11 +43,21 @@ const Index = () => {
               We bridge the gap between technology and human connection, save time and connect worldwide
             </p>
             <div className="flex flex-col items-center space-y-4">
-              <img 
-                src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
-                alt="Reconnected Logo" 
-                className="h-[200px] w-auto object-contain"
-              />
+              <div className="relative">
+                {/* Background New Zealand map */}
+                <img 
+                  src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
+                  alt="New Zealand Map Background" 
+                  className="absolute inset-0 w-[300px] h-[300px] object-contain opacity-20 z-0"
+                  style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
+                />
+                {/* Central logo */}
+                <img 
+                  src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
+                  alt="Reconnected Logo" 
+                  className="h-[200px] w-auto object-contain relative z-10"
+                />
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link to="/contact">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
