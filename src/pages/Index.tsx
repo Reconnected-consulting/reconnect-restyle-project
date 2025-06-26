@@ -1,4 +1,5 @@
 
+
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box, Brain, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -177,7 +178,7 @@ const Index = () => {
                 <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
                   Advanced 3D modeling, rendering, and visualization services that bring your ideas to life with photorealistic quality and immersive experiences.
                 </CardDescription>
-                <div className="h-48 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                <div className="aspect-video rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
                   <img 
                     src="/lovable-uploads/e0efa479-b242-45ad-a3f1-c1fa4cf12db9.png" 
                     alt="3D wireframe modeling example" 
@@ -327,3 +328,4 @@ const Index = () => {
 };
 
 export default Index;
+
