@@ -1,3 +1,4 @@
+
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,8 +21,8 @@ const Index = () => {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#specialties" className="text-gray-700 hover:text-blue-600 transition-colors">Specialties</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+              <a href="#portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</a>
+              <a href="#projects" className="text-gray-700 hover:text-blue-600 transition-colors">Projects</a>
            
               <Link to="/contact">
                 <Button className="bg-blue-600 hover:bg-blue-700">Connect</Button>
