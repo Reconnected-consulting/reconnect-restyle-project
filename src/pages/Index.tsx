@@ -49,7 +49,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/11f46d2a-3b98-4dd2-bbc1-822a3d377dd2.png" 
                   alt="Fern leaf decoration" 
-                  className="absolute inset-0 w-[300px] h-[150px] object-contain opacity-20 z-0"
+                  className="absolute inset-0 w-[600px] h-[300px] object-contain opacity-20 z-0"
                   style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
                 />
                 {/* Central logo */}
