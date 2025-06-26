@@ -21,8 +21,8 @@ const Index = () => {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</a>
-              <a href="#projects" className="text-gray-700 hover:text-blue-600 transition-colors">Projects</a>
+              <Link to="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</Link>
+              <Link to="/projects" className="text-gray-700 hover:text-blue-600 transition-colors">Projects</Link>
            
               <Link to="/contact">
                 <Button className="bg-blue-600 hover:bg-blue-700">Connect</Button>
