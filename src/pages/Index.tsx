@@ -1,3 +1,4 @@
+
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box, Brain, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -33,7 +34,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        {/* Fern leaf background - flipped upside down */}
+        {/* Fern leaf background - flipped upside down and moved down 100px */}
         <img 
           src="/lovable-uploads/11f46d2a-3b98-4dd2-bbc1-822a3d377dd2.png" 
           alt="Fern leaf decoration" 
@@ -41,7 +42,7 @@ const Index = () => {
           style={{ 
             transform: 'translate(-50%, -50%) scaleY(-1)', 
             left: '50%', 
-            top: '50%' 
+            top: 'calc(50% + 100px)' 
           }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
