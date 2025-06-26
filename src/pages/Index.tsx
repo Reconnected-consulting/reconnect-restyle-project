@@ -45,6 +45,13 @@ const Index = () => {
             </p>
             <div className="flex flex-col items-center space-y-4">
               <div className="relative">
+                {/* Fern leaf background */}
+                <img 
+                  src="/lovable-uploads/11f46d2a-3b98-4dd2-bbc1-822a3d377dd2.png" 
+                  alt="Fern leaf decoration" 
+                  className="absolute inset-0 w-[300px] h-[150px] object-contain opacity-20 z-0"
+                  style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
+                />
                 {/* Central logo */}
                 <img 
                   src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
