@@ -278,8 +278,12 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl shadow-2xl"></div>
+            <div className="relative flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/75cdfcc9-5aff-4713-8285-a4535da5421c.png" 
+                alt="Global Innovation Network" 
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
           </div>
         </div>
