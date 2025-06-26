@@ -33,12 +33,12 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative">
-        {/* Background New Zealand map - now 2x larger and 2x more transparent, moved down 200px */}
+        {/* Background New Zealand map - now 2x larger and 2x more transparent, moved up 70px */}
         <img 
           src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
           alt="New Zealand Map Background" 
           className="absolute inset-0 w-[900px] h-[900px] object-contain opacity-10 z-0"
-          style={{ transform: 'translate(-50%, calc(-50% + 300px))', left: '50%', top: '50%' }}
+          style={{ transform: 'translate(-50%, calc(-50% + 230px))', left: '50%', top: '50%' }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fade-in">
@@ -72,8 +72,15 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 relative">
+        {/* Background New Zealand map for services section - positioned behind cards */}
+        <img 
+          src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
+          alt="New Zealand Map Background" 
+          className="absolute inset-0 w-[900px] h-[900px] object-contain opacity-5 z-0"
+          style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
