@@ -47,7 +47,7 @@ const Index = () => {
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Digital World</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-              We bridge the gap between technology and human connection, save time and connect worldwide
+              We bridge the gap and save you time
             </p>
             <div className="flex flex-col items-center space-y-4">
               <div className="relative">
