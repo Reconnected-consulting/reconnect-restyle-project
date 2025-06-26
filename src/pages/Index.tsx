@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box, Brain, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -33,7 +32,13 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        {/* Fern leaf background - spread across entire hero section */}
+        <img 
+          src="/lovable-uploads/11f46d2a-3b98-4dd2-bbc1-822a3d377dd2.png" 
+          alt="Fern leaf decoration" 
+          className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
+        />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
@@ -45,13 +50,6 @@ const Index = () => {
             </p>
             <div className="flex flex-col items-center space-y-4">
               <div className="relative">
-                {/* Fern leaf background */}
-                <img 
-                  src="/lovable-uploads/11f46d2a-3b98-4dd2-bbc1-822a3d377dd2.png" 
-                  alt="Fern leaf decoration" 
-                  className="absolute inset-0 w-[3000px] h-[1500px] object-contain opacity-40 z-0"
-                  style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
-                />
                 {/* Central logo */}
                 <img 
                   src="/lovable-uploads/30dd62ac-51c2-4f6c-ba98-3c576199de8c.png" 
