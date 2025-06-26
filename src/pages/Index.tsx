@@ -33,13 +33,6 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative">
-        {/* Background New Zealand map - now 2x larger and 2x more transparent, moved up 70px */}
-        <img 
-          src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
-          alt="New Zealand Map Background" 
-          className="absolute inset-0 w-[900px] h-[900px] object-contain opacity-10 z-0"
-          style={{ transform: 'translate(-50%, calc(-50% + 230px))', left: '50%', top: '50%' }}
-        />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
