@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,11 +33,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative">
-        {/* Background New Zealand map - now covers entire hero section */}
+        {/* Background New Zealand map - now 2x larger and 2x more transparent */}
         <img 
           src="/lovable-uploads/af5ac09f-b564-4f0e-9402-65b69aaf6f60.png" 
           alt="New Zealand Map Background" 
-          className="absolute inset-0 w-[450px] h-[450px] object-contain opacity-20 z-0"
+          className="absolute inset-0 w-[900px] h-[900px] object-contain opacity-10 z-0"
           style={{ transform: 'translate(-50%, calc(-50% + 100px))', left: '50%', top: '50%' }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
