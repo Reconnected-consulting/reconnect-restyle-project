@@ -33,11 +33,12 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        {/* Fern leaf background - spread across entire hero section */}
+        {/* Fern leaf background - half size */}
         <img 
           src="/lovable-uploads/11f46d2a-3b98-4dd2-bbc1-822a3d377dd2.png" 
           alt="Fern leaf decoration" 
-          className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
+          className="absolute inset-0 w-1/2 h-1/2 object-contain opacity-20 z-0"
+          style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fade-in">
