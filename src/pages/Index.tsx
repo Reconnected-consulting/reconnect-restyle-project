@@ -1,4 +1,4 @@
-import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box } from "lucide-react";
+import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box, Brain, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -133,66 +133,109 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Specialized Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Cutting-edge drone technology and 3D solutions that push the boundaries of what's possible
+              Cutting-edge drone technology, 3D solutions, AI integration, and advanced manufacturing that push the boundaries of what's possible
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8">
             {/* Drone Services */}
-            <div className="space-y-8">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                      <Camera className="h-6 w-6 text-orange-600" />
-                    </div>
-                    <CardTitle className="text-2xl font-bold text-gray-900">Drone Services</CardTitle>
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                    <Camera className="h-6 w-6 text-orange-600" />
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
-                    Professional aerial photography, videography, and surveying services using state-of-the-art drone technology for stunning perspectives and precise data collection.
-                  </CardDescription>
-                  <div className="aspect-video rounded-lg overflow-hidden">
-                    <img 
-                      src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=600&h=400&fit=crop" 
-                      alt="Professional drone in flight" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+                  <CardTitle className="text-2xl font-bold text-gray-900">Drone Services</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Professional aerial photography, videography, and surveying services using state-of-the-art drone technology for stunning perspectives and precise data collection.
+                </CardDescription>
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=600&h=400&fit=crop" 
+                    alt="Professional drone in flight" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CardContent>
+            </Card>
 
-            {/* 3D Services */}
-            <div className="space-y-8">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                      <Box className="h-6 w-6 text-cyan-600" />
-                    </div>
-                    <CardTitle className="text-2xl font-bold text-gray-900">3D Solutions</CardTitle>
+            {/* 3D Solutions */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
+                    <Box className="h-6 w-6 text-cyan-600" />
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
-                    Advanced 3D modeling, rendering, and visualization services that bring your ideas to life with photorealistic quality and immersive experiences.
-                  </CardDescription>
-                  <div className="aspect-video rounded-lg overflow-hidden">
-                    <img 
-                      src="/lovable-uploads/e0efa479-b242-45ad-a3f1-c1fa4cf12db9.png" 
-                      alt="3D wireframe modeling example" 
-                      className="w-full h-full object-cover"
-                    />
+                  <CardTitle className="text-2xl font-bold text-gray-900">3D Solutions</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Advanced 3D modeling, rendering, and visualization services that bring your ideas to life with photorealistic quality and immersive experiences.
+                </CardDescription>
+                <div className="aspect-square rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/e0efa479-b242-45ad-a3f1-c1fa4cf12db9.png" 
+                    alt="3D wireframe modeling example" 
+                    className="w-full h-full object-contain p-4"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* AI Integration */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+                    <Brain className="h-6 w-6 text-purple-600" />
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                  <CardTitle className="text-2xl font-bold text-gray-900">AI Integration</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Intelligent automation and machine learning solutions that enhance your business processes with predictive analytics and smart decision-making capabilities.
+                </CardDescription>
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" 
+                    alt="AI and robotics technology" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* 3D Printing */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                    <Printer className="h-6 w-6 text-green-600" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-gray-900">3D Printing</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Rapid prototyping and custom manufacturing services using advanced 3D printing technology for precise, cost-effective production of complex designs.
+                </CardDescription>
+                <div className="aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-green-50 to-cyan-50 flex items-center justify-center">
+                  <div className="text-6xl text-green-600 opacity-20">
+                    <Printer className="h-24 w-24" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
+      {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 relative overflow-hidden">
         {/* Logo Watermark */}
         <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
