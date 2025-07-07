@@ -164,11 +164,11 @@ const Index = () => {
                 <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
                   Professional aerial photography, videography, and surveying services using state-of-the-art drone technology for stunning perspectives and precise data collection.
                 </CardDescription>
-                <div className="aspect-video rounded-lg overflow-hidden">
+                <div className="aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-green-50 to-cyan-50 flex items-center justify-center">
                   <img 
-                    src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=600&h=400&fit=crop" 
-                    alt="Professional drone in flight" 
-                    className="w-full h-full object-cover"
+                    src="/lovable-uploads/76a36c86-88cf-464a-a3e1-62d938b4ef48.png" 
+                    alt="Professional drone" 
+                    className="h-32 w-auto object-contain"
                   />
                 </div>
               </CardContent>
