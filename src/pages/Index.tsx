@@ -22,7 +22,7 @@ const Index = () => {
             </div>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center justify-end space-x-8 flex-1">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <Link to="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</Link>
               <Link to="/projects" className="text-gray-700 hover:text-blue-600 transition-colors">Projects</Link>
