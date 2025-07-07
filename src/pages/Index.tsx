@@ -1,7 +1,8 @@
 
-import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box, Brain, Printer } from "lucide-react";
+import { ArrowRight, Users, Globe, Shield, Zap, Camera, Box, Brain, Printer, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -19,6 +20,8 @@ const Index = () => {
               />
               <span className="text-2xl font-bold text-gray-900">Reconnected</span>
             </div>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
               <Link to="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</Link>
@@ -27,6 +30,27 @@ const Index = () => {
               <Link to="/contact">
                 <Button className="bg-blue-600 hover:bg-blue-700">Connect</Button>
               </Link>
+            </div>
+
+            {/* Mobile Navigation */}
+            <div className="md:hidden">
+              <Drawer>
+                <DrawerTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </DrawerTrigger>
+                <DrawerContent>
+                  <div className="flex flex-col space-y-6 p-6">
+                    <a href="#services" className="text-lg text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                    <Link to="/portfolio" className="text-lg text-gray-700 hover:text-blue-600 transition-colors">Portfolio</Link>
+                    <Link to="/projects" className="text-lg text-gray-700 hover:text-blue-600 transition-colors">Projects</Link>
+                    <Link to="/contact">
+                      <Button className="bg-blue-600 hover:bg-blue-700 w-full">Connect</Button>
+                    </Link>
+                  </div>
+                </DrawerContent>
+              </Drawer>
             </div>
           </div>
         </div>
