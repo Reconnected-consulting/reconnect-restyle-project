@@ -168,7 +168,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/76a36c86-88cf-464a-a3e1-62d938b4ef48.png" 
                     alt="Professional drone" 
-                    className="h-32 w-auto object-contain"
+                    className="h-64 w-auto object-contain"
                   />
                 </div>
               </CardContent>
