@@ -236,11 +236,11 @@ const Index = () => {
                 <CardDescription className="text-gray-600 text-lg leading-relaxed mb-6">
                   Intelligent automation and machine learning solutions that enhance your business processes with predictive analytics and smart decision-making capabilities.
                 </CardDescription>
-                <div className="aspect-video rounded-lg overflow-hidden">
+                <div className="aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
                   <img 
-                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" 
-                    alt="AI and robotics technology" 
-                    className="w-full h-full object-cover"
+                    src="/lovable-uploads/8326aaaf-9b8f-4701-85be-a15b8830e6d0.png" 
+                    alt="AI-powered kiwi bird illustration" 
+                    className="h-48 w-auto object-contain"
                   />
                 </div>
               </CardContent>
@@ -261,9 +261,11 @@ const Index = () => {
                   Rapid prototyping and custom manufacturing services using advanced 3D printing technology for precise, cost-effective production of complex designs.
                 </CardDescription>
                 <div className="aspect-video rounded-lg overflow-hidden bg-gradient-to-br from-green-50 to-cyan-50 flex items-center justify-center">
-                  <div className="text-6xl text-green-600 opacity-20">
-                    <Printer className="h-24 w-24" />
-                  </div>
+                  <img 
+                    src="/lovable-uploads/9126ed57-f451-479d-a3c4-b2e6bda5c6f5.png" 
+                    alt="3D printed kiwi bird model" 
+                    className="h-48 w-auto object-contain"
+                  />
                 </div>
               </CardContent>
             </Card>
